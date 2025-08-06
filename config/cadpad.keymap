@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/bt.h>
 #define default_layer 0
 #define lower_layer 1
+#define lowest_layer 2
 
 / {
     // Define a default keymap here.
@@ -17,21 +18,31 @@
         default_layer {
         //
         //  | ESC |  L  |  R  |  C  |  Q  |
-        //  |  X  |  T  |  O  |  M  | LOW |
+        //  |  X  |  T  |  O  |  M  | SEC |
         //
             bindings = <
                 &kp ESC &kp L &kp R &kp C &kp Q
-                &kp X   &kp T &kp O &kp M &mo 1
+                &kp X   &kp T &kp O &kp M &to 1
             >;
         };
         lower_layer {
         //
-        //  |  I  |  H  |  F  |  J  | MMB |
-        //  | CLR | NEW | SVE | OPN |     |
+        //  |  I  |  H  |  F  |  0  | MMB |
+        //  | CLR |  J  | LSH | SVE | TRI |
         //
             bindings = <
-            &kp I      &kp H     &kp F     &kp J     &mkp MCLK
-            &bt BT_CLR &kp LG(N) &kp LG(S) &kp LG(O) &trans
+            &kp I      &kp H &kp F     &kp N0    &mkp MCLK
+            &bt BT_CLR &kp J &kp LSHFT &kp LG(S) &to 2
+            >;
+        };
+        lowest_layer {
+        //
+        //  |  1  |  2  |  3  |  4  |  5  |
+        //  |  6  |  7  |  8  |  9  | PRI |
+        //
+            bindings = <
+            &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+            &kp N6 &kp N7 &kp N8 &kp N9 &to 0
             >;
         };
     };
