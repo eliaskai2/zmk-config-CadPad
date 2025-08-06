@@ -42,7 +42,7 @@
         //
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
-                &kp N6 &kp N7 &kp N8 &kp N9 &to 0
+                &kp N6 &kp N7 &kp N8 &kp N9 &to 2
             >;
         };
         lowest_layer {
@@ -52,7 +52,7 @@
         //
             bindings = <
                 &kp I &kp H          &kp F &kp N0  &mkp MCLK
-                &kp J &mt LSHFT BSPC &td0  &kp RET &to 2
+                &kp J &mt LSHFT BSPC &td0  &kp RET &to 0
             >;
         };
     };
