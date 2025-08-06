@@ -4,7 +4,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/bt.h>
 #define default_layer 0
 #define lower_layer 1
 #define lowest_layer 2
@@ -28,11 +27,11 @@
         lower_layer {
         //
         //  |  I  |  H  |  F  |  0  | MMB |
-        //  | CLR |  J  | LSH | SVE | TRI |
+        //  | BSP |  J  | LSH | SVE | TRI |
         //
             bindings = <
-            &kp I      &kp H &kp F     &kp N0    &mkp MCLK
-            &bt BT_CLR &kp J &kp LSHFT &kp LG(S) &to 2
+            &kp I    &kp H &kp F     &kp N0    &mkp MCLK
+            &kp BSPC &kp J &kp LSHFT &kp LG(S) &to 2
             >;
         };
         lowest_layer {
