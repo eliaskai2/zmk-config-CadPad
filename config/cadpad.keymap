@@ -7,6 +7,7 @@
 #define default_layer 0
 #define lower_layer 1
 #define lowest_layer 2
+#define MMB &mkp MCLK
 
 / {
     // Define a default keymap here.
@@ -26,12 +27,12 @@
         };
         lower_layer {
         //
-        //  |  I  |  H  |  F  |  0  | MMB |
-        //  | BSP |  J  | LSH | SVE | TRI |
+        //  |  I  |  H  |  F  |  0  | MMB / BSPC (tap)|
+        //  |  J  | LSH | OPN | SVE | TRI |
         //
             bindings = <
-            &kp I    &kp H &kp F     &kp N0    &mkp MCLK
-            &kp BSPC &kp J &kp LSHFT &kp LG(S) &to 2
+            &kp I &kp H     &kp F     &kp N0  &mt MMB BSPC
+            &kp J &kp LSHFT &kp LG(O) &kp LG(S) &to 2
             >;
         };
         lowest_layer {
