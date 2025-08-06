@@ -38,7 +38,7 @@
         lower_layer {
         //
         //  |  1  |  2  |  3  |  4  |  5  |
-        //  |  6  |  7  |  8  |  9  | PRI |
+        //  |  6  |  7  |  8  |  9  | TRI |
         //
             bindings = <
                 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
@@ -48,7 +48,7 @@
         lowest_layer {
         //
         //  |  I  |  H  |  F  |  0  | MMB |
-        //  |  J  | LSH/BSP | ./- | RET | TRI |
+        //  |  J  | LSH/BSP | ./- | RET | PRI |
         //
             bindings = <
                 &kp I &kp H          &kp F &kp N0  &mkp MCLK
