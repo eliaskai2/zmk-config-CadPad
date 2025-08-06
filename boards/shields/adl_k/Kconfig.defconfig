@@ -1,0 +1,6 @@
+if SHIELD_ADL_K
+
+config ZMK_KEYBOARD_NAME
+    default "adl'k"
+
+endif # SHIELD_ADL_K
