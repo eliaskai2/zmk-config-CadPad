@@ -28,11 +28,11 @@
         lower_layer {
         //
         //  |  I  |  H  |  F  |  0  | MMB |
-        //  |  J  | LSH/BSP | OPN | SVE | TRI |
+        //  |  J  | LSH/BSP |  .  | SVE | TRI |
         //
             bindings = <
             &kp I &kp H          &kp F     &kp N0  &mkp MCLK
-            &kp J &mt LSHFT BSPC &kp LG(O) &kp LG(S) &to 2
+            &kp J &mt LSHFT BSPC &kp DOT &kp LG(S) &to 2
             >;
         };
         lowest_layer {
